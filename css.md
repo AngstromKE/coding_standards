@@ -30,7 +30,7 @@ Defining a solid style guide to be applied to tag names can significantly reduce
 #### Inclusion ####
 Use the <link> tag to include all your style sheets in the <head> of the document. For optimal page performance, concatenate your CSS into as few files as possible and do not use the @import command to include other style sheets, as this will fire an additional HTTP request and block page rendering until its completion.
 ```
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="main.css">
 ```
 
 
