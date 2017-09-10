@@ -81,7 +81,7 @@ Indent nested elements and tags with single indentation settings, whatever they 
 ```
 
 ### HTML5 Elements ###
-To provide additional semantic value to our documents, make use of HTML5 elements such as <header>, <article>, and <section> where appropriate. However, in cases where the HTML needs to be as backwards-compatible as possible, do not apply IDs or classes to them, since older browsers do not understand these elements by default and will not apply styling to them.
+To provide additional semantic value to our documents, make use of HTML5 elements such as `<header>`, `<article>`, and `<section>` where appropriate. However, in cases where the HTML needs to be as backwards-compatible as possible, do not apply IDs or classes to them, since older browsers do not understand these elements by default and will not apply styling to them.
 ```
 <header>
     <div class="site-header">
