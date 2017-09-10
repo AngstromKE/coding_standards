@@ -259,6 +259,8 @@ When using vendor prefixed features, put the standardized rule at the end to ens
     transition: all 100ms;
 }
 ```
+**Note: **
+Vendor prefixes are a time-sensitive thing. As browsers update over time, the need for them will fall away. If you use Autoprefixer, when compiling Sass, then you should never have to write them.
 
  ### Coding Patterns ###
 There are a number of popular design patterns for naming conventions on selectors, groupings or extensions of styles in CSS files. Sometimes these are of value and may be used on projects as long as the developers are on board and they are used consistently by the team.
