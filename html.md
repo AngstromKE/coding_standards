@@ -119,20 +119,20 @@ When coming up with names for an ID or class, we use semantic names like "second
 All links should point to absolute or relative URLs with user-readable content. Do not link to XML or JSON resources that are designed to be Ajaxed by JavaScript instead of navigated to directly, and do not put JavaScript in an anchor's href attribute like javascript:loadPage(2);. This allows search engines to index the content, allows the user to open the links in a new tab or window, and means the links will still work when JavaScript is broken, disabled, or not supported. This will require that the back-end be able to return a full HTML page for each important content state (e.g. sorting a table column).
 
 ### Paragraphs ###
-Avoid using <br> tags to separate paragraphs or lines of text. Use <p> instead with proper opening and closing elements.
+Avoid using `<br>` tags to separate paragraphs or lines of text. Use `<p>` instead with proper opening and closing elements.
 
 ### Tables ###
-Tables should not be used for page layout; only use them when you need to display tabular data. Tables provide an important semantic association (used mostly by screen readers for the sight-impaired) between row/column headers and their data, so use <table> rather than other elements when displaying multiple records of data.
+Tables should not be used for page layout; only use them when you need to display tabular data. Tables provide an important semantic association (used mostly by screen readers for the sight-impaired) between row/column headers and their data, so use `<table>` rather than other elements when displaying multiple records of data.
 
-The <caption> element is the recommended way to describe a table for both sighted and sight-impaired users, though this can also be done less semantically in the normal page text around the table. Use the <thead> and <tbody> elements to denote which row contains column headers so when a user prints the website and the table runs onto another page, browsers can display the <thead> on each page for easier readability. Remember to use the scope attribute on the <th> element to indicate whether the header applies to the row or column.
+The `<caption>` element is the recommended way to describe a table for both sighted and sight-impaired users, though this can also be done less semantically in the normal page text around the table. Use the `<thead>` and `<tbody>` elements to denote which row contains column headers so when a user prints the website and the table runs onto another page, browsers can display the `<thead>` on each page for easier readability. Remember to use the scope attribute on the `<th>` element to indicate whether the header applies to the row or column.
 
 ### Forms ###
-For both semantic and functional reasons, we make full use of the <form> tag for all sections requiring user input. All form action attributes should point to URLs with user-readable content, so they will still work if the form is submitted by the user before JavaScript has loaded on a page, or if JavaScript is broken, disabled, or not supported. This will require that the back-end be able to return a full HTML page for form submission (e.g. registering a new user, editing the quantity in a shopping cart).
+For both semantic and functional reasons, we make full use of the `<form>` tag for all sections requiring user input. All form action attributes should point to URLs with user-readable content, so they will still work if the form is submitted by the user before JavaScript has loaded on a page, or if JavaScript is broken, disabled, or not supported. This will require that the back-end be able to return a full HTML page for form submission (e.g. registering a new user, editing the quantity in a shopping cart).
 
 Do not nest the HTML form element tag.
 
 ### Input Labels ###
-All input fields should be associated with a <label> element. The for attribute of the <label> element should contain the ID of the corresponding input field. This means the input field will receive focus when a user clicks the label and also enables screen readers for sight-impaired users to read out an appropriate description of the input field.
+All input fields should be associated with a `<label>` element. The for attribute of the `<label>` element should contain the ID of the corresponding input field. This means the input field will receive focus when a user clicks the label and also enables screen readers for sight-impaired users to read out an appropriate description of the input field.
 
 ```
 <-- Here's an example -->
@@ -144,6 +144,7 @@ All input fields should be associated with a <label> element. The for attribute 
 Typically HTML deliverables are incorporated into Content Management Systems or application delivery platforms as templates. A plan for incorporation of templates that leverage patterns created during the markup creation phase should be followed and matching types of pages to templates that were created, so that an association between the source markup and the destination markup can be maintained over time.
 
 ### Other Considerations ###
+
 1. Site maintenance procedures
 2. Browser testing strategies
 3. How new features will be added
